@@ -3,7 +3,7 @@ import { Lesson } from "@/lib/types";
 export const phase1Lessons: Lesson[] = [
   {
     day: 1,
-    dayType: "new-pattern",
+    dayType: "vocab-expansion",
     title: "First Sounds + Survival Phrases",
     phase: 1,
     phaseTitle: "Foundation Patterns + Hiragana",

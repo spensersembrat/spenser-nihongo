@@ -14,6 +14,8 @@ import PatternIndex from "@/components/PatternIndex";
 import MotivationModal from "@/components/MotivationModal";
 import CheckpointModal from "@/components/CheckpointModal";
 import ThemeToggle from "@/components/ThemeToggle";
+import DataBackup from "@/components/DataBackup";
+import VocabDictionary from "@/components/VocabDictionary";
 import Link from "next/link";
 
 export default function Dashboard() {
@@ -94,7 +96,12 @@ export default function Dashboard() {
               <ThemeToggle />
             </div>
           </div>
-          <ProgressBar completedCount={completedCount} />
+          <div className="flex items-center justify-between">
+            <ProgressBar completedCount={completedCount} />
+          </div>
+          <div className="mt-3 flex justify-end">
+            <DataBackup />
+          </div>
         </div>
       </header>
 
@@ -138,6 +145,7 @@ export default function Dashboard() {
 
       <KanaDrawer />
       <PatternIndex progress={progress} />
+      <VocabDictionary progress={progress} />
       <MotivationModal
         completedCount={completedCount}
         patternsLearned={patternsLearned}

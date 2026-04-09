@@ -20,6 +20,7 @@ import NotesEditor from "@/components/NotesEditor";
 import CompletionButton from "@/components/CompletionButton";
 import CheckpointModal from "@/components/CheckpointModal";
 import KanaDrawer from "@/components/KanaDrawer";
+import VocabDictionary from "@/components/VocabDictionary";
 import ThemeToggle from "@/components/ThemeToggle";
 import StreakCounter from "@/components/StreakCounter";
 
@@ -251,6 +252,7 @@ export default function LessonPage({
       </main>
 
       <KanaDrawer />
+      <VocabDictionary progress={progress} />
 
       {showCheckpoint && checkpoint && (
         <CheckpointModal

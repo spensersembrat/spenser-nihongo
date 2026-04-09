@@ -31,8 +31,31 @@ export default function QuickReference({ content }: { content: string }) {
         </svg>
       </button>
       {open && (
-        <div className="px-5 pb-4 text-sm text-stone-600 dark:text-stone-300 leading-relaxed whitespace-pre-line border-t border-stone-100 dark:border-stone-800 pt-3">
-          {content}
+        <div className="px-5 pb-4 border-t border-stone-100 dark:border-stone-800 pt-3">
+          <div className="flex flex-wrap gap-2">
+            {content.split("|").map((item, i) => {
+              const trimmed = item.trim();
+              if (!trimmed) return null;
+              const [jp, en] = trimmed.includes("=")
+                ? trimmed.split("=")
+                : [trimmed, null];
+              return (
+                <span
+                  key={i}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-sm"
+                >
+                  <span className="jp font-medium text-stone-900 dark:text-stone-100">
+                    {jp.trim()}
+                  </span>
+                  {en && (
+                    <span className="text-stone-500 dark:text-stone-400">
+                      {en.trim()}
+                    </span>
+                  )}
+                </span>
+              );
+            })}
+          </div>
         </div>
       )}
     </div>
