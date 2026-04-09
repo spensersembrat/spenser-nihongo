@@ -21,6 +21,7 @@ import Link from "next/link";
 export default function Dashboard() {
   const { progress, streak, loaded, completedCount } = useProgress();
   const [pendingCheckpoint, setPendingCheckpoint] = useState<number | null>(null);
+  const [showAbout, setShowAbout] = useState(false);
 
   const patternsLearned = useMemo(() => {
     return masterPatterns.filter((p) => progress[p.introducedOnDay]).length;
@@ -162,16 +163,44 @@ export default function Dashboard() {
 
       <footer className="border-t border-stone-200 dark:border-stone-800 mt-16 pt-6 pb-20 px-4">
         <div className="max-w-6xl mx-auto flex justify-center">
-          <div className="group relative">
-            <p className="text-xs text-stone-400 dark:text-stone-600 cursor-default">
-              Built by Spenser Sembrat · April 2026
+          <button
+            onClick={() => setShowAbout(true)}
+            className="text-xs text-stone-400 dark:text-stone-600 hover:text-stone-500 dark:hover:text-stone-500 transition-colors cursor-pointer"
+          >
+            Built by Spenser Sembrat · April 2026
+          </button>
+        </div>
+      </footer>
+
+      {showAbout && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center px-4 bg-black/40"
+          onClick={() => setShowAbout(false)}
+        >
+          <div
+            className="w-full max-w-sm rounded-xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-xl p-6"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <p className="text-sm leading-relaxed text-stone-700 dark:text-stone-300">
+              I built this for myself because I learn through pattern recognition — not phrasebooks. The idea: learn reusable sentence structures first, then plug vocabulary into them. One pattern, infinite sentences.
             </p>
-            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-72 p-3 rounded-lg bg-stone-900 dark:bg-stone-100 text-stone-100 dark:text-stone-900 text-xs leading-relaxed shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity">
-              I built this for myself because I learn through pattern recognition — not phrasebooks. The idea: learn reusable sentence structures first, then plug vocabulary into them. One pattern, infinite sentences. Each day is 30–60 minutes of writing by hand, building muscle memory through repetition and mnemonics. This isn&apos;t meant to replace immersion — it&apos;s the structural foundation that makes immersion click faster.
+            <p className="mt-3 text-sm leading-relaxed text-stone-700 dark:text-stone-300">
+              Each day is 30–60 minutes of writing by hand, building muscle memory through repetition and mnemonics. This isn&apos;t meant to replace immersion — it&apos;s the structural foundation that makes immersion click faster.
+            </p>
+            <div className="mt-5 flex items-center justify-between">
+              <span className="text-xs text-stone-400 dark:text-stone-600">
+                Spenser Sembrat · April 2026
+              </span>
+              <button
+                onClick={() => setShowAbout(false)}
+                className="text-xs text-stone-500 hover:text-stone-700 dark:hover:text-stone-300 transition-colors cursor-pointer"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
-      </footer>
+      )}
     </div>
   );
 }
