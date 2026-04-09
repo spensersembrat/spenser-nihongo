@@ -159,6 +159,19 @@ export default function Dashboard() {
           onClose={dismissCheckpoint}
         />
       )}
+
+      <footer className="border-t border-stone-200 dark:border-stone-800 mt-16 pt-6 pb-20 px-4">
+        <div className="max-w-6xl mx-auto flex justify-center">
+          <div className="group relative">
+            <p className="text-xs text-stone-400 dark:text-stone-600 cursor-default">
+              Built by Spenser Sembrat · April 2026
+            </p>
+            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-72 p-3 rounded-lg bg-stone-900 dark:bg-stone-100 text-stone-100 dark:text-stone-900 text-xs leading-relaxed shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity">
+              I built this for myself because I learn through pattern recognition — not phrasebooks. The idea: learn reusable sentence structures first, then plug vocabulary into them. One pattern, infinite sentences. Each day is 30–60 minutes of writing by hand, building muscle memory through repetition and mnemonics. This isn&apos;t meant to replace immersion — it&apos;s the structural foundation that makes immersion click faster.
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
