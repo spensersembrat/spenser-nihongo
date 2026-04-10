@@ -71,7 +71,7 @@ export default function CompletionButton({
                 className="mt-0.5 h-4 w-4 rounded border-stone-300 dark:border-stone-600 accent-emerald-600"
               />
               <span className="text-sm text-stone-600 dark:text-stone-400 group-hover:text-stone-800 dark:group-hover:text-stone-200 transition-colors">
-                I&apos;ve studied and practiced writing today&apos;s new kana characters
+                I&apos;ve studied and practiced today&apos;s new kana characters
               </span>
             </label>
           )}
