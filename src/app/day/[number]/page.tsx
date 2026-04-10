@@ -59,6 +59,10 @@ export default function LessonPage({
     }
   }, [completed, dayNum, completeDay, uncompleteDay, checkpoint]);
 
+  const hasNewKana = !!lesson?.objectives.some((obj) =>
+    /learn.*hiragana|vowel sounds|learn.*katakana|learn.*dakuten|learn.*handakuten|combo.?sounds/i.test(obj)
+  );
+
   const prevDay = allLessons.find((l) => l.day === dayNum - 1);
   const nextDay = allLessons.find((l) => l.day === dayNum + 1);
 
@@ -215,6 +219,7 @@ export default function LessonPage({
             onToggle={handleToggleComplete}
             dayNum={dayNum}
             hasVocab={!!lesson.vocabulary && lesson.vocabulary.length > 0}
+            hasNewKana={hasNewKana}
           />
         </section>
 

@@ -7,15 +7,18 @@ export default function CompletionButton({
   onToggle,
   dayNum,
   hasVocab,
+  hasNewKana,
 }: {
   completed: boolean;
   onToggle: () => void;
   dayNum: number;
   hasVocab: boolean;
+  hasNewKana: boolean;
 }) {
   const storageKey = `nihonjo-checklist-${dayNum}`;
 
   const [quizletChecked, setQuizletChecked] = useState(false);
+  const [kanaChecked, setKanaChecked] = useState(false);
 
   useEffect(() => {
     try {
@@ -23,32 +26,56 @@ export default function CompletionButton({
       if (stored) {
         const parsed = JSON.parse(stored);
         if (parsed.quizlet) setQuizletChecked(true);
+        if (parsed.kana) setKanaChecked(true);
       }
     } catch {}
   }, [storageKey]);
 
   useEffect(() => {
     try {
-      localStorage.setItem(storageKey, JSON.stringify({ quizlet: quizletChecked }));
+      localStorage.setItem(
+        storageKey,
+        JSON.stringify({ quizlet: quizletChecked, kana: kanaChecked })
+      );
     } catch {}
-  }, [quizletChecked, storageKey]);
+  }, [quizletChecked, kanaChecked, storageKey]);
 
-  const canComplete = !hasVocab || quizletChecked;
+  const canComplete =
+    (!hasVocab || quizletChecked) && (!hasNewKana || kanaChecked);
+
+  const showChecklist = !completed && (hasVocab || hasNewKana);
 
   return (
     <div className="space-y-3">
-      {hasVocab && !completed && (
-        <label className="flex items-start gap-3 cursor-pointer group">
-          <input
-            type="checkbox"
-            checked={quizletChecked}
-            onChange={() => setQuizletChecked(!quizletChecked)}
-            className="mt-0.5 h-4 w-4 rounded border-stone-300 dark:border-stone-600 accent-emerald-600"
-          />
-          <span className="text-sm text-stone-600 dark:text-stone-400 group-hover:text-stone-800 dark:group-hover:text-stone-200 transition-colors">
-            I&apos;ve added all vocab words to my Quizlet set
-          </span>
-        </label>
+      {showChecklist && (
+        <div className="space-y-2">
+          {hasVocab && (
+            <label className="flex items-start gap-3 cursor-pointer group">
+              <input
+                type="checkbox"
+                checked={quizletChecked}
+                onChange={() => setQuizletChecked(!quizletChecked)}
+                className="mt-0.5 h-4 w-4 rounded border-stone-300 dark:border-stone-600 accent-emerald-600"
+              />
+              <span className="text-sm text-stone-600 dark:text-stone-400 group-hover:text-stone-800 dark:group-hover:text-stone-200 transition-colors">
+                I&apos;ve added all vocab words to my Quizlet set
+              </span>
+            </label>
+          )}
+          {hasNewKana && (
+            <label className="flex items-start gap-3 cursor-pointer group">
+              <input
+                type="checkbox"
+                checked={kanaChecked}
+                onChange={() => setKanaChecked(!kanaChecked)}
+                className="mt-0.5 h-4 w-4 rounded border-stone-300 dark:border-stone-600 accent-emerald-600"
+              />
+              <span className="text-sm text-stone-600 dark:text-stone-400 group-hover:text-stone-800 dark:group-hover:text-stone-200 transition-colors">
+                I&apos;ve studied and practiced writing today&apos;s new kana characters
+              </span>
+            </label>
+          )}
+        </div>
       )}
 
       <button
