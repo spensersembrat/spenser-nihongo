@@ -213,6 +213,8 @@ export default function LessonPage({
           <CompletionButton
             completed={completed}
             onToggle={handleToggleComplete}
+            dayNum={dayNum}
+            hasVocab={!!lesson.vocabulary && lesson.vocabulary.length > 0}
           />
         </section>
 
