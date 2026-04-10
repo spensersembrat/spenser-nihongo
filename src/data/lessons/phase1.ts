@@ -15,6 +15,41 @@ export const phase1Lessons: Lesson[] = [
     ],
     vocabulary: [
       {
+        japanese: "あ",
+        romaji: "a",
+        english: "ah (as in 'father')",
+        mnemonic:
+          "あ looks like a person tilting back saying 'Ahhh!' at the dentist — the curved stroke is their open mouth",
+      },
+      {
+        japanese: "い",
+        romaji: "i",
+        english: "ee (as in 'eat')",
+        mnemonic:
+          "い looks like two eels swimming side by side — 'ee-ls!'",
+      },
+      {
+        japanese: "う",
+        romaji: "u",
+        english: "oo (as in 'moon')",
+        mnemonic:
+          "う looks like a bird beak pointing up saying 'oooh!' in surprise",
+      },
+      {
+        japanese: "え",
+        romaji: "e",
+        english: "eh (as in 'pet')",
+        mnemonic:
+          "え looks like an energetic dancer with arms spread — 'eh, nice moves!'",
+      },
+      {
+        japanese: "お",
+        romaji: "o",
+        english: "oh (as in 'go')",
+        mnemonic:
+          "お looks like a person carrying a backpack, saying 'oh!' as they walk by",
+      },
+      {
         japanese: "こんにちは",
         romaji: "konnichiwa",
         english: "Hello / Good afternoon",
@@ -71,6 +106,31 @@ export const phase1Lessons: Lesson[] = [
       },
     ],
     examples: [
+      {
+        japanese: "あ — い — う — え — お",
+        romaji: "a — i — u — e — o",
+        english: "The 5 Japanese vowels — every Japanese sound is built on these",
+      },
+      {
+        japanese: "あい",
+        romaji: "ai",
+        english: "Love — two vowels make a real word",
+      },
+      {
+        japanese: "いえ",
+        romaji: "ie",
+        english: "House — another pure-vowel word",
+      },
+      {
+        japanese: "あおい",
+        romaji: "aoi",
+        english: "Blue — three vowels in a row",
+      },
+      {
+        japanese: "うえ",
+        romaji: "ue",
+        english: "Up / above",
+      },
       {
         japanese: "こんにちは！",
         romaji: "Konnichiwa!",
@@ -638,7 +698,7 @@ export const phase1Lessons: Lesson[] = [
     phase: 1,
     phaseTitle: "Foundation Patterns + Hiragana",
     objectives: [
-      "Learn hiragana や row (やゆよ), ら row (らりるれろ), わ, and ん",
+      "Learn hiragana や row (やゆよ), ら row (らりるれろ), わ, を, and ん — completing all 46!",
       "Master Pattern #4: ___は___です ([Topic] is [description])",
       "Understand the は (wa) topic marker particle",
       "Describe people, places, and things",
@@ -792,7 +852,7 @@ export const phase1Lessons: Lesson[] = [
       "Describe Tokyo using Pattern #4: とうきょうは___です",
       "Say that your friend is energetic: ともだちはげんきです",
       "Ask how Japan is and answer: にほんはどうですか？ → にほんは___です",
-      "Practice writing や row: や ゆ よ, ら row: ら り る れ ろ, わ, and ん",
+      "Practice writing や row: や ゆ よ, ら row: ら り る れ ろ, わ, を, and ん",
     ],
     languageInsight: {
       title: "Particles: Japanese's Secret Weapon",
@@ -802,7 +862,7 @@ export const phase1Lessons: Lesson[] = [
     tutorNote:
       "The は particle is the single most important concept in Japanese grammar. Think of it as a spotlight: whatever comes before は is what you're shining the light on. 'とうきょうは...' means 'Speaking of Tokyo...' or 'As for Tokyo...' Everything after は describes the topic. This pattern unlocks the ability to talk ABOUT things, not just identify them.",
     quickReference:
-      "や=ya ゆ=yu よ=yo | ら=ra り=ri る=ru れ=re ろ=ro | わ=wa ん=n | Pattern #4: [topic]は[description]です = [Topic] is [description] | は (wa) = topic marker",
+      "や=ya ゆ=yu よ=yo | ら=ra り=ri る=ru れ=re ろ=ro | わ=wa を=wo/o ん=n | All 46 basic hiragana complete! | Pattern #4: [topic]は[description]です = [Topic] is [description] | は (wa) = topic marker",
     listeningRec: {
       source: "JapanesePod101",
       title: "Absolute Beginner S1 #5 — Describing Things",
