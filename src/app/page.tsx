@@ -16,6 +16,7 @@ import CheckpointModal from "@/components/CheckpointModal";
 import ThemeToggle from "@/components/ThemeToggle";
 import DataBackup from "@/components/DataBackup";
 import VocabDictionary from "@/components/VocabDictionary";
+import QuizletButton from "@/components/QuizletButton";
 import Link from "next/link";
 
 export default function Dashboard() {
@@ -147,6 +148,7 @@ export default function Dashboard() {
       <KanaDrawer />
       <PatternIndex progress={progress} />
       <VocabDictionary progress={progress} />
+      <QuizletButton />
       <MotivationModal
         completedCount={completedCount}
         patternsLearned={patternsLearned}
