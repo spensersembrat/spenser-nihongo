@@ -260,7 +260,7 @@ export default function LessonPage({
       </main>
 
       <KanaDrawer />
-      <VocabDictionary progress={progress} />
+      <VocabDictionary progress={progress} buttonPosition="left-20" />
       <QuizletButton />
 
       {showCheckpoint && checkpoint && (

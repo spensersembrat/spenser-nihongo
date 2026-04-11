@@ -36,8 +36,10 @@ function buildDictionary(): DictEntry[] {
 
 export default function VocabDictionary({
   progress,
+  buttonPosition = "left-36",
 }: {
   progress: ProgressData;
+  buttonPosition?: string;
 }) {
   const [open, setOpen] = useState(false);
   const [filter, setFilter] = useState<"all" | "learned" | "upcoming">("all");
@@ -81,7 +83,7 @@ export default function VocabDictionary({
     <>
       <button
         onClick={() => setOpen(true)}
-        className="fixed bottom-4 left-36 z-40 w-12 h-12 rounded-full bg-stone-800 dark:bg-stone-200 text-white dark:text-stone-900 flex items-center justify-center shadow-lg hover:scale-105 transition-transform text-sm font-bold"
+        className={`fixed bottom-4 ${buttonPosition} z-40 w-12 h-12 rounded-full bg-stone-800 dark:bg-stone-200 text-white dark:text-stone-900 flex items-center justify-center shadow-lg hover:scale-105 transition-transform text-sm font-bold`}
         title="Vocabulary Dictionary"
       >
         辞
