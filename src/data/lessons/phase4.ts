@@ -16,20 +16,24 @@ export const phase4Lessons: Lesson[] = [
     pattern: {
       number: 21,
       japanese: "___は[い-adj]です",
+      romaji: "___ wa [i-adj] desu",
       english: "It is [adjective]",
       breakdown: [
         {
           text: "___は",
+          romaji: "___ wa",
           role: "particle",
           explanation: "Topic marker — the thing being described",
         },
         {
           text: "[い-adj]",
+          romaji: "[i-adj]",
           role: "slot",
           explanation: "An い-adjective — always ends in い in dictionary form",
         },
         {
           text: "です",
+          romaji: "desu",
           role: "fixed",
           explanation: "Polite copula — adds politeness (い-adjectives don't need it grammatically)",
         },
@@ -325,20 +329,24 @@ export const phase4Lessons: Lesson[] = [
     pattern: {
       number: 22,
       japanese: "___は[な-adj]です",
+      romaji: "___ wa [na-adj] desu",
       english: "It is [na-adjective]",
       breakdown: [
         {
           text: "___は",
+          romaji: "___ wa",
           role: "particle",
           explanation: "Topic marker — the thing being described",
         },
         {
           text: "[な-adj]",
+          romaji: "[na-adj]",
           role: "slot",
           explanation: "A な-adjective — needs な when placed before a noun",
         },
         {
           text: "です",
+          romaji: "desu",
           role: "fixed",
           explanation:
             "Polite copula — carries the conjugation for な-adjectives",
@@ -876,26 +884,31 @@ export const phase4Lessons: Lesson[] = [
     pattern: {
       number: 23,
       japanese: "___がすきです",
+      romaji: "___ ga suki desu",
       english: "I like ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "The thing you like — a noun or verb phrase",
         },
         {
           text: "が",
+          romaji: "ga",
           role: "particle",
           explanation:
             "Subject marker — marks the object of liking (not を!)",
         },
         {
           text: "すき",
+          romaji: "suki",
           role: "fixed",
           explanation: "Liked / favorite — a な-adjective meaning 'liked'",
         },
         {
           text: "です",
+          romaji: "desu",
           role: "fixed",
           explanation: "Polite copula",
         },
@@ -1086,26 +1099,31 @@ export const phase4Lessons: Lesson[] = [
     pattern: {
       number: 24,
       japanese: "___がほしいです",
+      romaji: "___ ga hoshii desu",
       english: "I want [thing]",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "The thing you want — must be a noun",
         },
         {
           text: "が",
+          romaji: "ga",
           role: "particle",
           explanation:
             "Subject marker — the wanted thing is the grammatical subject",
         },
         {
           text: "ほしい",
+          romaji: "hoshii",
           role: "fixed",
           explanation: "Wanted / desired — an い-adjective meaning 'is desired'",
         },
         {
           text: "です",
+          romaji: "desu",
           role: "fixed",
           explanation: "Polite copula",
         },
@@ -1257,22 +1275,26 @@ export const phase4Lessons: Lesson[] = [
     pattern: {
       number: 25,
       japanese: "___たいです",
+      romaji: "___tai desu",
       english: "I want to ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "verb",
           explanation:
             "Verb stem — the part before ます (たべます→たべ, いきます→いき)",
         },
         {
           text: "たい",
+          romaji: "tai",
           role: "fixed",
           explanation:
             "Want to — attaches to verb stem; conjugates like an い-adjective",
         },
         {
           text: "です",
+          romaji: "desu",
           role: "fixed",
           explanation: "Polite copula",
         },
@@ -1459,21 +1481,25 @@ export const phase4Lessons: Lesson[] = [
     pattern: {
       number: 26,
       japanese: "___より___のほうが___です",
+      romaji: "___ yori ___ no hō ga ___ desu",
       english: "B is more ___ than A",
       breakdown: [
         {
           text: "___より",
+          romaji: "___ yori",
           role: "particle",
           explanation: "A より — 'than A' — the lesser item comes first",
         },
         {
           text: "___のほうが",
+          romaji: "___ no hō ga",
           role: "particle",
           explanation:
             "B のほうが — 'B is more' — the greater item + direction marker",
         },
         {
           text: "___です",
+          romaji: "___ desu",
           role: "slot",
           explanation: "The adjective being compared + polite copula",
         },
@@ -1626,22 +1652,26 @@ export const phase4Lessons: Lesson[] = [
     pattern: {
       number: 27,
       japanese: "___だ / ___じゃない / [dictionary form]",
+      romaji: "___ da / ___ ja nai (casual)",
       english: "Casual speech forms",
       breakdown: [
         {
           text: "___だ",
+          romaji: "___ da",
           role: "fixed",
           explanation:
             "Casual copula — replaces です for nouns and な-adjectives",
         },
         {
           text: "___じゃない",
+          romaji: "___ ja nai",
           role: "fixed",
           explanation:
             "Casual negative — replaces じゃないです / ではありません",
         },
         {
           text: "[dict. form]",
+          romaji: "[dictionary form]",
           role: "verb",
           explanation:
             "Dictionary form of verb — replaces ます form (たべる, いく, のむ)",
@@ -1833,21 +1863,25 @@ export const phase4Lessons: Lesson[] = [
     pattern: {
       number: 28,
       japanese: "___とおもいます",
+      romaji: "___ to omoimasu",
       english: "I think ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation:
             "A complete sentence in casual form — the thought being expressed",
         },
         {
           text: "と",
+          romaji: "to",
           role: "particle",
           explanation: "Quotation particle — marks the preceding clause as the content of thinking",
         },
         {
           text: "おもいます",
+          romaji: "omoimasu",
           role: "verb",
           explanation:
             "To think (polite) — the main verb; casual form is おもう",

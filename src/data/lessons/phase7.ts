@@ -16,28 +16,33 @@ export const phase7Lessons: Lesson[] = [
     pattern: {
       number: 50,
       japanese: "です↔だ / ます↔[plain form] / ません↔ない",
+      romaji: "desu ↔ da / masu ↔ [plain form] etc.",
       english: "Polite ↔ casual register switching",
       breakdown: [
         {
           text: "です→だ",
+          romaji: "desu → da",
           role: "fixed",
           explanation:
             "Polite copula becomes だ in casual speech (or dropped entirely with い-adjectives)",
         },
         {
           text: "ます→[dictionary form]",
+          romaji: "masu → [dictionary form]",
           role: "verb",
           explanation:
             "Polite verb ending drops to dictionary form in casual (たべます→たべる)",
         },
         {
           text: "ません→ない",
+          romaji: "masen → nai",
           role: "verb",
           explanation:
             "Polite negative becomes casual negative (たべません→たべない)",
         },
         {
           text: "でしょう→だろう",
+          romaji: "deshō → darō",
           role: "fixed",
           explanation:
             "Polite probability becomes casual probability",

@@ -277,20 +277,24 @@ export const phase2Lessons: Lesson[] = [
     pattern: {
       number: 7,
       japanese: "___にいきます",
+      romaji: "___ ni ikimasu",
       english: "I go to ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "Destination — where you're going",
         },
         {
           text: "に",
+          romaji: "ni",
           role: "particle",
           explanation: "Direction/destination marker",
         },
         {
           text: "いきます",
+          romaji: "ikimasu",
           role: "verb",
           explanation: "To go (polite form of いく)",
         },
@@ -443,21 +447,25 @@ export const phase2Lessons: Lesson[] = [
     pattern: {
       number: 9,
       japanese: "___で___ます",
+      romaji: "___ de ___masu",
       english: "I [verb] at [place]",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "Place — where the action happens",
         },
         {
           text: "で",
+          romaji: "de",
           role: "particle",
           explanation:
             "Location-of-action marker (where you DO something)",
         },
         {
           text: "___ます",
+          romaji: "___masu",
           role: "verb",
           explanation: "Action in polite form",
         },
@@ -597,30 +605,36 @@ export const phase2Lessons: Lesson[] = [
     pattern: {
       number: 10,
       japanese: "___はなんですか？",
+      romaji: "___ wa nan desu ka?",
       english: "What is ___?",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "The topic you're asking about",
         },
         {
           text: "は",
+          romaji: "wa",
           role: "particle",
           explanation: "Topic marker (pronounced 'wa')",
         },
         {
           text: "なん",
+          romaji: "nan",
           role: "fixed",
           explanation: "What",
         },
         {
           text: "です",
+          romaji: "desu",
           role: "fixed",
           explanation: "Polite copula",
         },
         {
           text: "か",
+          romaji: "ka",
           role: "particle",
           explanation: "Question marker",
         },
@@ -782,26 +796,31 @@ export const phase2Lessons: Lesson[] = [
     pattern: {
       number: 11,
       japanese: "だれが___ますか？",
+      romaji: "dare ga ___masu ka?",
       english: "Who [verbs]?",
       breakdown: [
         {
           text: "だれ",
+          romaji: "dare",
           role: "fixed",
           explanation: "Who",
         },
         {
           text: "が",
+          romaji: "ga",
           role: "particle",
           explanation:
             "Subject marker — identifies the doer of the action",
         },
         {
           text: "___ます",
+          romaji: "___masu",
           role: "verb",
           explanation: "Action in polite form",
         },
         {
           text: "か",
+          romaji: "ka",
           role: "particle",
           explanation: "Question marker",
         },

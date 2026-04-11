@@ -227,15 +227,18 @@ export const phase1Lessons: Lesson[] = [
     pattern: {
       number: 1,
       japanese: "___です",
+      romaji: "___ desu",
       english: "I am ___ / This is ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "A noun — who you are, what something is",
         },
         {
           text: "です",
+          romaji: "desu",
           role: "fixed",
           explanation: "Polite copula (am / is / are)",
         },
@@ -382,20 +385,24 @@ export const phase1Lessons: Lesson[] = [
     pattern: {
       number: 2,
       japanese: "___じゃないです",
+      romaji: "___ ja nai desu",
       english: "I am not ___ / This is not ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "A noun — what you or something is NOT",
         },
         {
           text: "じゃない",
+          romaji: "ja nai",
           role: "fixed",
           explanation: "Negation (is not)",
         },
         {
           text: "です",
+          romaji: "desu",
           role: "fixed",
           explanation: "Polite ending",
         },
@@ -547,20 +554,24 @@ export const phase1Lessons: Lesson[] = [
     pattern: {
       number: 3,
       japanese: "___ですか？",
+      romaji: "___ desu ka?",
       english: "Is it ___? / Are you ___?",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "What you're asking about",
         },
         {
           text: "です",
+          romaji: "desu",
           role: "fixed",
           explanation: "Polite copula (am / is / are)",
         },
         {
           text: "か",
+          romaji: "ka",
           role: "particle",
           explanation:
             "Question marker — turns any statement into a question",
@@ -706,25 +717,30 @@ export const phase1Lessons: Lesson[] = [
     pattern: {
       number: 4,
       japanese: "___は___です",
+      romaji: "___ wa ___ desu",
       english: "[Topic] is [description]",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "The topic — what you're talking about",
         },
         {
           text: "は",
+          romaji: "wa",
           role: "particle",
           explanation: "Topic marker (pronounced 'wa', not 'ha')",
         },
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "Description or attribute of the topic",
         },
         {
           text: "です",
+          romaji: "desu",
           role: "fixed",
           explanation: "Polite copula (am / is / are)",
         },
@@ -887,31 +903,37 @@ export const phase1Lessons: Lesson[] = [
     pattern: {
       number: 5,
       japanese: "___はどこですか？",
+      romaji: "___ wa doko desu ka?",
       english: "Where is ___?",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation:
             "The place or thing you're looking for",
         },
         {
           text: "は",
+          romaji: "wa",
           role: "particle",
           explanation: "Topic marker (pronounced 'wa')",
         },
         {
           text: "どこ",
+          romaji: "doko",
           role: "fixed",
           explanation: "Where",
         },
         {
           text: "です",
+          romaji: "desu",
           role: "fixed",
           explanation: "Polite copula",
         },
         {
           text: "か",
+          romaji: "ka",
           role: "particle",
           explanation: "Question marker",
         },
@@ -1218,20 +1240,24 @@ export const phase1Lessons: Lesson[] = [
     pattern: {
       number: 6,
       japanese: "___をください",
+      romaji: "___ o kudasai",
       english: "___ please / Please give me ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "The thing you want",
         },
         {
           text: "を",
+          romaji: "o",
           role: "particle",
           explanation: "Object marker (pronounced 'o')",
         },
         {
           text: "ください",
+          romaji: "kudasai",
           role: "fixed",
           explanation: "Please give me / Please",
         },

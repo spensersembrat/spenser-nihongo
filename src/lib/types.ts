@@ -2,6 +2,7 @@ export type DayType = "new-pattern" | "vocab-expansion" | "pattern-combo" | "rev
 
 export type PatternPart = {
   text: string;
+  romaji?: string;
   role: "particle" | "slot" | "fixed" | "verb";
   explanation: string;
 };
@@ -56,6 +57,7 @@ export type Lesson = {
   pattern?: {
     number: number;
     japanese: string;
+    romaji: string;
     english: string;
     breakdown: PatternPart[];
   };

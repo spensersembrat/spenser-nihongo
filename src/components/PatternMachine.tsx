@@ -15,6 +15,7 @@ export default function PatternMachine({
   pattern: {
     number: number;
     japanese: string;
+    romaji: string;
     english: string;
     breakdown: PatternPart[];
   };
@@ -27,6 +28,9 @@ export default function PatternMachine({
         </span>
         <div className="space-y-1">
           <p className="jp text-2xl leading-relaxed">{pattern.japanese}</p>
+          <p className="text-sm italic text-stone-400 dark:text-stone-500">
+            {pattern.romaji}
+          </p>
           <p className="text-stone-500 dark:text-stone-400 text-sm">
             {pattern.english}
           </p>
@@ -41,13 +45,21 @@ export default function PatternMachine({
           {pattern.breakdown.map((part, i) => (
             <span key={i} className={roleStyles[part.role]} title={part.explanation}>
               <span className="jp">{part.text}</span>
+              {part.romaji && (
+                <span className="block text-xs italic text-stone-400 dark:text-stone-500 font-normal text-center">
+                  {part.romaji}
+                </span>
+              )}
             </span>
           ))}
         </div>
         <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-stone-500 dark:text-stone-400">
           {pattern.breakdown.map((part, i) => (
             <span key={i}>
-              <span className="jp">{part.text}</span> — {part.explanation}
+              <span className="jp">{part.text}</span>
+              {part.romaji && (
+                <span className="italic"> ({part.romaji})</span>
+              )} — {part.explanation}
             </span>
           ))}
         </div>

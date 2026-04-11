@@ -384,15 +384,18 @@ export const phase5Lessons: Lesson[] = [
     pattern: {
       number: 29,
       japanese: "___てください",
+      romaji: "___ te kudasai",
       english: "Please [verb]",
       breakdown: [
         {
           text: "___て",
+          romaji: "___ te",
           role: "verb",
           explanation: "Te-form of the verb — the action you're requesting",
         },
         {
           text: "ください",
+          romaji: "kudasai",
           role: "fixed",
           explanation: "Please — adds polite request meaning",
         },
@@ -577,20 +580,24 @@ export const phase5Lessons: Lesson[] = [
     pattern: {
       number: 30,
       japanese: "___てもいいですか？",
+      romaji: "___ te mo ii desu ka?",
       english: "May I ___?",
       breakdown: [
         {
           text: "___て",
+          romaji: "___ te",
           role: "verb",
           explanation: "Te-form of the verb — the action you want permission for",
         },
         {
           text: "も",
+          romaji: "mo",
           role: "particle",
           explanation: "Even — 'even if I do this…'",
         },
         {
           text: "いいですか",
+          romaji: "ii desu ka",
           role: "fixed",
           explanation: "Is it okay? — polite question about permission",
         },
@@ -774,20 +781,24 @@ export const phase5Lessons: Lesson[] = [
     pattern: {
       number: 31,
       japanese: "___てはいけません",
+      romaji: "___ te wa ikemasen",
       english: "You must not ___",
       breakdown: [
         {
           text: "___て",
+          romaji: "___ te",
           role: "verb",
           explanation: "Te-form of the verb — the forbidden action",
         },
         {
           text: "は",
+          romaji: "wa",
           role: "particle",
           explanation: "Topic marker — 'as for doing this…'",
         },
         {
           text: "いけません",
+          romaji: "ikemasen",
           role: "fixed",
           explanation: "It won't do / it's not allowed — the prohibition",
         },
@@ -961,15 +972,18 @@ export const phase5Lessons: Lesson[] = [
     pattern: {
       number: 32,
       japanese: "___ています",
+      romaji: "___ te imasu",
       english: "I am ___ing / is in a state of ___",
       breakdown: [
         {
           text: "___て",
+          romaji: "___ te",
           role: "verb",
           explanation: "Te-form of the verb — the action or state",
         },
         {
           text: "います",
+          romaji: "imasu",
           role: "fixed",
           explanation: "Existence verb (animate) — creates ongoing/state meaning",
         },
@@ -1161,20 +1175,24 @@ export const phase5Lessons: Lesson[] = [
     pattern: {
       number: 33,
       japanese: "___て、___て、___ます",
+      romaji: "___ te, ___ te, ___ masu",
       english: "[verb], [verb], and [verb]",
       breakdown: [
         {
           text: "___て、",
+          romaji: "___ te,",
           role: "verb",
           explanation: "First action in te-form — 'doing this, and then…'",
         },
         {
           text: "___て、",
+          romaji: "___ te,",
           role: "verb",
           explanation: "Second action in te-form — 'then doing this, and then…'",
         },
         {
           text: "___ます",
+          romaji: "___ masu",
           role: "verb",
           explanation: "Final action in polite form — ends the chain",
         },
@@ -1355,15 +1373,18 @@ export const phase5Lessons: Lesson[] = [
     pattern: {
       number: 34,
       japanese: "___てから",
+      romaji: "___ te kara",
       english: "After ___ing",
       breakdown: [
         {
           text: "___て",
+          romaji: "___ te",
           role: "verb",
           explanation: "Te-form of the verb — the action that happens first",
         },
         {
           text: "から",
+          romaji: "kara",
           role: "particle",
           explanation: "After / from — emphasizes the completed-first relationship",
         },
@@ -1555,25 +1576,30 @@ export const phase5Lessons: Lesson[] = [
     pattern: {
       number: 36,
       japanese: "___ことができます",
+      romaji: "___ koto ga dekimasu",
       english: "I can ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "Dictionary form of the verb — the ability being described",
         },
         {
           text: "こと",
+          romaji: "koto",
           role: "fixed",
           explanation: "Nominalizer — turns the verb into 'the act of ___ing'",
         },
         {
           text: "が",
+          romaji: "ga",
           role: "particle",
           explanation: "Subject marker — marks the nominalized verb as subject",
         },
         {
           text: "できます",
+          romaji: "dekimasu",
           role: "verb",
           explanation: "Can do / is possible — the polite potential",
         },
@@ -1765,20 +1791,24 @@ export const phase5Lessons: Lesson[] = [
     pattern: {
       number: 37,
       japanese: "___なくてもいい",
+      romaji: "___ nakute mo ii",
       english: "You don't have to ___",
       breakdown: [
         {
           text: "___なくて",
+          romaji: "___ nakute",
           role: "verb",
           explanation: "Negative te-form — 'not doing [verb]'",
         },
         {
           text: "も",
+          romaji: "mo",
           role: "particle",
           explanation: "Even — 'even if you don't…'",
         },
         {
           text: "いい",
+          romaji: "ii",
           role: "fixed",
           explanation: "Is fine / is okay — it's acceptable not to do it",
         },

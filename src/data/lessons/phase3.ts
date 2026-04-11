@@ -161,15 +161,18 @@ export const phase3Lessons: Lesson[] = [
     pattern: {
       number: 13,
       japanese: "___ました",
+      romaji: "___ mashita",
       english: "I [verbed]",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "Verb stem — the part before ます",
         },
         {
           text: "ました",
+          romaji: "mashita",
           role: "fixed",
           explanation: "Past tense polite ending — replaces ます",
         },
@@ -312,15 +315,18 @@ export const phase3Lessons: Lesson[] = [
     pattern: {
       number: 14,
       japanese: "___ません",
+      romaji: "___ masen",
       english: "I don't ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "Verb stem — the part before ます",
         },
         {
           text: "ません",
+          romaji: "masen",
           role: "fixed",
           explanation: "Negative polite ending — replaces ます",
         },
@@ -459,15 +465,18 @@ export const phase3Lessons: Lesson[] = [
     pattern: {
       number: 15,
       japanese: "___ませんでした",
+      romaji: "___ masen deshita",
       english: "I didn't ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "Verb stem — the part before ます",
         },
         {
           text: "ませんでした",
+          romaji: "masen deshita",
           role: "fixed",
           explanation: "Past negative polite ending — replaces ます",
         },
@@ -782,40 +791,48 @@ export const phase3Lessons: Lesson[] = [
     pattern: {
       number: 16,
       japanese: "[Time]に[Place]で[Object]を[Verb]",
+      romaji: "[Time] ni [Place] de [Object] o [Verb]",
       english: "At [time], I [verb] [object] at [place]",
       breakdown: [
         {
           text: "[Time]",
+          romaji: "[Time]",
           role: "slot",
           explanation: "When — time expression",
         },
         {
           text: "に",
+          romaji: "ni",
           role: "particle",
           explanation: "Time marker (optional with some time words like きのう, きょう)",
         },
         {
           text: "[Place]",
+          romaji: "[Place]",
           role: "slot",
           explanation: "Where — location of the action",
         },
         {
           text: "で",
+          romaji: "de",
           role: "particle",
           explanation: "Location-of-action marker",
         },
         {
           text: "[Object]",
+          romaji: "[Object]",
           role: "slot",
           explanation: "What — the thing acted upon",
         },
         {
           text: "を",
+          romaji: "o",
           role: "particle",
           explanation: "Object marker",
         },
         {
           text: "[Verb]",
+          romaji: "[Verb]",
           role: "verb",
           explanation: "Action — always last in the sentence",
         },
@@ -992,20 +1009,24 @@ export const phase3Lessons: Lesson[] = [
     pattern: {
       number: 17,
       japanese: "___があります / ___がいます",
+      romaji: "___ ga arimasu / ___ ga imasu",
       english: "There is ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "Thing or being that exists",
         },
         {
           text: "が",
+          romaji: "ga",
           role: "particle",
           explanation: "Subject marker",
         },
         {
           text: "あります/います",
+          romaji: "arimasu / imasu",
           role: "verb",
           explanation: "Exists — あります for objects/plants, います for people/animals",
         },
@@ -1184,20 +1205,24 @@ export const phase3Lessons: Lesson[] = [
     pattern: {
       number: 18,
       japanese: "___をもっています",
+      romaji: "___ o motte imasu",
       english: "I have ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "The thing you possess",
         },
         {
           text: "を",
+          romaji: "o",
           role: "particle",
           explanation: "Object marker",
         },
         {
           text: "もっています",
+          romaji: "motte imasu",
           role: "verb",
           explanation: "Have / possess (polite, ongoing state)",
         },
@@ -1368,30 +1393,36 @@ export const phase3Lessons: Lesson[] = [
     pattern: {
       number: 19,
       japanese: "___と___を___ます",
+      romaji: "___ to ___ o ___masu",
       english: "I [verb] ___ and ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "First item",
         },
         {
           text: "と",
+          romaji: "to",
           role: "particle",
           explanation: "And — connects nouns",
         },
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "Second item",
         },
         {
           text: "を",
+          romaji: "o",
           role: "particle",
           explanation: "Object marker",
         },
         {
           text: "___ます",
+          romaji: "___masu",
           role: "verb",
           explanation: "Action (polite)",
         },

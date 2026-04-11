@@ -16,21 +16,25 @@ export const phase6Lessons: Lesson[] = [
     pattern: {
       number: 38,
       japanese: "___とおもいます",
+      romaji: "___ to omoimasu",
       english: "I think that ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation:
             "A complete clause in plain form — verb, adjective, or sentence",
         },
         {
           text: "と",
+          romaji: "to",
           role: "particle",
           explanation: "Quotation particle marking the embedded thought",
         },
         {
           text: "おもいます",
+          romaji: "omoimasu",
           role: "verb",
           explanation: "To think (polite) — casual form: おもう",
         },
@@ -201,25 +205,30 @@ export const phase6Lessons: Lesson[] = [
     pattern: {
       number: 39,
       japanese: "___は___といいました",
+      romaji: "___ wa ___ to iimashita",
       english: "___ said that ___",
       breakdown: [
         {
           text: "___は",
+          romaji: "___ wa",
           role: "slot",
           explanation: "The person who spoke + topic marker",
         },
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "What was said (in plain form)",
         },
         {
           text: "と",
+          romaji: "to",
           role: "particle",
           explanation: "Quotation particle",
         },
         {
           text: "いいました",
+          romaji: "iimashita",
           role: "verb",
           explanation: "Said (past polite of いう)",
         },
@@ -387,27 +396,32 @@ export const phase6Lessons: Lesson[] = [
     pattern: {
       number: 40,
       japanese: "___から、___。/ ___ので、___。",
+      romaji: "___ kara, ___. / ___ node, ___.",
       english: "Because ___, ___.",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation:
             "The reason (plain form before ので; plain or polite before から)",
         },
         {
           text: "から",
+          romaji: "kara",
           role: "particle",
           explanation: "Because (direct, casual — can also follow polite form)",
         },
         {
           text: "ので",
+          romaji: "node",
           role: "particle",
           explanation:
             "Because (softer, polite — な-adj/noun use な before ので)",
         },
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "The result or conclusion",
         },
@@ -571,25 +585,30 @@ export const phase6Lessons: Lesson[] = [
     pattern: {
       number: 41,
       japanese: "___けど、___。/ ___が、___。",
+      romaji: "___ kedo, ___. / ___ ga, ___.",
       english: "___, but ___.",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "First clause (can be plain or polite form)",
         },
         {
           text: "けど",
+          romaji: "kedo",
           role: "particle",
           explanation: "But (casual — variants: けれど, けれども)",
         },
         {
           text: "が",
+          romaji: "ga",
           role: "particle",
           explanation: "But (polite/formal — follows polite form)",
         },
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "Contrasting second clause",
         },
@@ -948,21 +967,25 @@ export const phase6Lessons: Lesson[] = [
     pattern: {
       number: 42,
       japanese: "(もし) ___たら、___。",
+      romaji: "(moshi) ___tara, ___.",
       english: "If ___, ___.",
       breakdown: [
         {
           text: "もし",
+          romaji: "moshi",
           role: "fixed",
           explanation: "If (optional emphasis that this is hypothetical)",
         },
         {
           text: "___たら",
+          romaji: "___tara",
           role: "slot",
           explanation:
             "Condition — た-form of verb/adjective + ら (e.g., いったら, たかかったら)",
         },
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "Result — what happens if the condition is met",
         },
@@ -1127,21 +1150,25 @@ export const phase6Lessons: Lesson[] = [
     pattern: {
       number: 43,
       japanese: "___とき、___。",
+      romaji: "___ toki, ___.",
       english: "When ___, ___.",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation:
             "Situation (verb plain form / い-adj / な-adj + な / noun + の + とき)",
         },
         {
           text: "とき",
+          romaji: "toki",
           role: "fixed",
           explanation: "When / at the time of",
         },
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "What happens at that time",
         },
@@ -1311,21 +1338,25 @@ export const phase6Lessons: Lesson[] = [
     pattern: {
       number: 44,
       japanese: "___まえに / ___あとで",
+      romaji: "___ mae ni / ___ ato de",
       english: "Before ___ / After ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation:
             "Action (dictionary form before まえに; た-form before あとで)",
         },
         {
           text: "まえに",
+          romaji: "mae ni",
           role: "fixed",
           explanation: "Before (doing something)",
         },
         {
           text: "あとで",
+          romaji: "ato de",
           role: "fixed",
           explanation: "After (doing something)",
         },
@@ -1498,16 +1529,19 @@ export const phase6Lessons: Lesson[] = [
     pattern: {
       number: 45,
       japanese: "___すぎる",
+      romaji: "___ sugiru",
       english: "Too much ___ / Excessively ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation:
             "Verb ます-stem, い-adj stem (drop い), or な-adj stem",
         },
         {
           text: "すぎる",
+          romaji: "sugiru",
           role: "verb",
           explanation:
             "To exceed / too much (ru-verb — conjugates: すぎます, すぎた, etc.)",
@@ -1688,20 +1722,24 @@ export const phase6Lessons: Lesson[] = [
     pattern: {
       number: 47,
       japanese: "___ましょう / ___よう",
+      romaji: "___ mashō / ___ yō",
       english: "Let's ___",
       breakdown: [
         {
           text: "___",
+          romaji: "___",
           role: "slot",
           explanation: "Verb stem (same as before ます)",
         },
         {
           text: "ましょう",
+          romaji: "mashō",
           role: "verb",
           explanation: "Let's (polite volitional) — replaces ます",
         },
         {
           text: "よう",
+          romaji: "yō",
           role: "verb",
           explanation:
             "Let's (casual volitional) — ru-verbs: drop る + よう; u-verbs: change to おう-column",
@@ -2284,38 +2322,46 @@ export const phase6Lessons: Lesson[] = [
     pattern: {
       number: 49,
       japanese: "そうですね / なるほど / やっぱり / ちょっと / えーと / まあ",
+      romaji:
+        "sō desu ne / naruhodo / yappari / chotto / ēto / mā",
       english: "Conversational filler words",
       breakdown: [
         {
           text: "そうですね",
+          romaji: "sō desu ne",
           role: "fixed",
           explanation:
             "That's right / Let me see… (agreement or thinking pause)",
         },
         {
           text: "なるほど",
+          romaji: "naruhodo",
           role: "fixed",
           explanation: "I see / Indeed (showing understanding)",
         },
         {
           text: "やっぱり",
+          romaji: "yappari",
           role: "fixed",
           explanation:
             "As expected / After all (confirming a suspicion or reverting to original thought)",
         },
         {
           text: "ちょっと",
+          romaji: "chotto",
           role: "fixed",
           explanation:
             "A little / Hmm… (softening, hesitation, or polite refusal)",
         },
         {
           text: "えーと",
+          romaji: "ēto",
           role: "fixed",
           explanation: "Um… / Let me think… (thinking pause)",
         },
         {
           text: "まあ",
+          romaji: "mā",
           role: "fixed",
           explanation: "Well… / I suppose (hedging or mild acceptance)",
         },
