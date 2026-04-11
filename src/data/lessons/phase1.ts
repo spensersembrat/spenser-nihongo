@@ -292,6 +292,31 @@ export const phase1Lessons: Lesson[] = [
         mnemonic:
           "'Ee-sha' — 'I shall heal you,' says the doctor",
       },
+      {
+        japanese: "あさ",
+        romaji: "asa",
+        english: "morning",
+      },
+      {
+        japanese: "すし",
+        romaji: "sushi",
+        english: "sushi",
+      },
+      {
+        japanese: "かさ",
+        romaji: "kasa",
+        english: "umbrella",
+      },
+      {
+        japanese: "いす",
+        romaji: "isu",
+        english: "chair",
+      },
+      {
+        japanese: "あき",
+        romaji: "aki",
+        english: "autumn",
+      },
     ],
     examples: [
       {
@@ -454,6 +479,31 @@ export const phase1Lessons: Lesson[] = [
         fitsPattern: [1, 2],
         mnemonic:
           "イギリス from Portuguese 'Inglês' (English) + じん",
+      },
+      {
+        japanese: "ねこ",
+        romaji: "neko",
+        english: "cat",
+      },
+      {
+        japanese: "いぬ",
+        romaji: "inu",
+        english: "dog",
+      },
+      {
+        japanese: "なつ",
+        romaji: "natsu",
+        english: "summer",
+      },
+      {
+        japanese: "おかね",
+        romaji: "okane",
+        english: "money",
+      },
+      {
+        japanese: "つき",
+        romaji: "tsuki",
+        english: "moon",
       },
     ],
     examples: [
@@ -618,6 +668,31 @@ export const phase1Lessons: Lesson[] = [
         english: "work / job",
         fitsPattern: [3, 4],
         mnemonic: "'She-go-toe' — she goes to work",
+      },
+      {
+        japanese: "はな",
+        romaji: "hana",
+        english: "flower / nose",
+      },
+      {
+        japanese: "ほし",
+        romaji: "hoshi",
+        english: "star",
+      },
+      {
+        japanese: "ひと",
+        romaji: "hito",
+        english: "person",
+      },
+      {
+        japanese: "まち",
+        romaji: "machi",
+        english: "town",
+      },
+      {
+        japanese: "ふね",
+        romaji: "fune",
+        english: "boat / ship",
       },
     ],
     examples: [
@@ -804,6 +879,31 @@ export const phase1Lessons: Lesson[] = [
         romaji: "Tōkyō",
         english: "Tokyo",
         fitsPattern: [4],
+      },
+      {
+        japanese: "やま",
+        romaji: "yama",
+        english: "mountain",
+      },
+      {
+        japanese: "さくら",
+        romaji: "sakura",
+        english: "cherry blossom",
+      },
+      {
+        japanese: "よる",
+        romaji: "yoru",
+        english: "night",
+      },
+      {
+        japanese: "ゆき",
+        romaji: "yuki",
+        english: "snow",
+      },
+      {
+        japanese: "わたし",
+        romaji: "watashi",
+        english: "I / me",
       },
     ],
     examples: [
@@ -996,6 +1096,31 @@ export const phase1Lessons: Lesson[] = [
         mnemonic:
           "Sounds like 'restaurant' with Japanese pronunciation",
       },
+      {
+        japanese: "かぜ",
+        romaji: "kaze",
+        english: "wind",
+      },
+      {
+        japanese: "ことば",
+        romaji: "kotoba",
+        english: "word / language",
+      },
+      {
+        japanese: "そば",
+        romaji: "soba",
+        english: "buckwheat noodles",
+      },
+      {
+        japanese: "でんき",
+        romaji: "denki",
+        english: "electricity / light",
+      },
+      {
+        japanese: "じかん",
+        romaji: "jikan",
+        english: "time",
+      },
     ],
     examples: [
       {
@@ -1141,6 +1266,26 @@ export const phase1Lessons: Lesson[] = [
         english: "half (as in half past)",
         mnemonic:
           "'Han' — 'half' starts with the same sound",
+      },
+      {
+        japanese: "きょう",
+        romaji: "kyō",
+        english: "today",
+      },
+      {
+        japanese: "しゃしん",
+        romaji: "shashin",
+        english: "photo / photograph",
+      },
+      {
+        japanese: "てんぷら",
+        romaji: "tempura",
+        english: "tempura",
+      },
+      {
+        japanese: "ぱん",
+        romaji: "pan",
+        english: "bread",
       },
     ],
     examples: [
