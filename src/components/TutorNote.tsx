@@ -11,9 +11,11 @@ export default function TutorNote({ note }: { note: string }) {
       >
         <path d="M10 1a6 6 0 00-3.815 10.631C7.237 12.5 8 13.443 8 14.456v.644a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-.644c0-1.013.762-1.957 1.815-2.825A6 6 0 0010 1zM8.5 17a.5.5 0 00-.5.5v.5a1.5 1.5 0 003 0v-.5a.5.5 0 00-.5-.5h-2z" />
       </svg>
-      <p className="text-sm text-amber-900/80 dark:text-amber-100/70 leading-relaxed">
-        {note}
-      </p>
+      <div className="text-sm text-amber-900/80 dark:text-amber-100/70 leading-relaxed space-y-2">
+        {note.split("\n\n").map((paragraph, i) => (
+          <p key={i}>{paragraph}</p>
+        ))}
+      </div>
     </div>
   );
 }
